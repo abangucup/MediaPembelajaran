@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnMateri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Materi Pembelajaran" />
+
+    <Button
+        android:id="@+id/btnGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game Edukatif" />
+
+    <Button
+        android:id="@+id/btnEvaluasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Evaluasi" />
+
+    <Button
+        android:id="@+id/btnStandarKompetensi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Standar Kompetensi" />
+</LinearLayout>
