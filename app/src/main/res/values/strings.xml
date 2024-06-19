@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Media Pembelajaran</string>
+    <string name="app_name">MeRak</string>
+    <string name="logo_desc">Logo</string>
+    <string name="materi_desc">Materi Pembelajaran</string>
+    <string name="game_desc">Game Education</string>
+    <string name="evaluasi_desc">Evaluasi Pembelajaran</string>
+    <string name="standar_desc">Standar Kompetensi Pembelajaran</string>
+    <string name="welcome">WELCOME</string>
+    <string name="app_desc">MEDIA PEMBELAJARAN INTERAKTIF</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="search">Button Search</string>
+    <string name="back">Button Back</string>
+    <string name="next">Button Next</string>
 </resources>

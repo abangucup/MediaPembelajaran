@@ -1,5 +1,6 @@
 package com.jeddy.pembelajaran
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -16,8 +17,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        enableEdgeToEdge()
 
         binding.btnMateri.setOnClickListener {
             val intent = Intent(this, MateriActivity::class.java)
@@ -38,5 +37,20 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, StandarKompetensiActivity::class.java)
             startActivity(intent)
         }
+
+//        binding.btnKembali.setOnClickListener {
+//            val intent = Intent(this, StartActivity::class.java)
+//            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+//            startActivity(intent)
+//            finish()
+//        }
+    }
+
+    @SuppressLint("MissingSuperCall")
+    override fun onBackPressed() {
+        val intent = Intent(this, StartActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+        startActivity(intent)
+        finish()
     }
 }
